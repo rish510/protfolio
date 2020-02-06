@@ -18,10 +18,9 @@ li{
 
 @media only screen and (max-width: 700px) {
   
-  body{
+  .body{
     display: grid;
     grid-template-rows: 1fr 1fr 1frpx;
-
   }
 
   #navbar{
@@ -57,7 +56,6 @@ li{
   
   .label1{
     border-radius: 10px 0px 0px 10px;
-
   }
   
   .label2{
@@ -83,6 +81,17 @@ li{
     margin: 10px 2px 0px 2px;
     transform: skew(10deg, 0);
     font-size: 10px
+  }
+  
+  .button{
+    width: 0px;
+    height: 0px; 
+    border-top: 6px solid white;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 13px;
+    left: 9px;
   }
   
   .droplink{
@@ -128,9 +137,78 @@ li{
     cursor: pointer;
   }
   
+  .popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+  }
   
+  #bio{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+  }
   
+  .timeline{
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
   
+  .begin{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin: auto 0;
+    transform: rotate(45deg);
+    left: -18.1px;
+    display: grid;
+    place-items: center;
+  }
+ 
+  .beginend{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+  }
+  
+  .stop{ /*inhabits grid 2/3 3/4 4/5 */
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    margin: auto 0;
+    left: -13.5px;
+    display: grid;
+    place-items: center;
+  }
+  
+  .stoptab{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .end{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin: auto 0;
+    transform: rotate(45deg);
+    left: -18.1px;
+    display: grid;
+    place-items: center;
+  }
+
   
   #welcome-section{
     text-align: center;
